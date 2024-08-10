@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-section">
+
+
+        <section>
+            <input type="number" placeholder="second" id="second-input" min="1" max="59">
+            <input type="number" placeholder="miniute" id="miniute-input" min="0" max="59">
+            <input type="number" placeholder="hour" id="hour-input" max="23" min="0">
+        </section>
+        <div>
+            <button id="start-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+            <button id="pause-btn">Pause</button>
+            <button id="resume-btn">Resume</button>
+        </div>
+    </div>
+    <div>
+
+        <button id="restart-btn">Restart</button>
+    </div>
+
+    <audio preload="auto" src="Recording.m4a" id="audio"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
